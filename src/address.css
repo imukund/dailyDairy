@@ -1,0 +1,47 @@
+.add-input{
+    padding-top: 30px;
+    width:100%;
+    position: relative;
+}
+#add-input-text{
+    border: none;
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color:rgb(87, 86, 86)
+}
+.add-input label{
+    position: absolute;
+    bottom: 5px;
+    font-size: 20px;
+    color: gray;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.add-input input:focus~label,
+.add-input input:valid~label{
+    transform: translateY(-30px);
+    color: #3986eb;
+ }
+ .add-underline{
+    bottom: 0px;
+    height: 2px;
+    position:absolute;
+    width:100%;
+    background-color: rgb(172, 172, 172);
+ }
+ .add-underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 102%;
+    background:#3986eb;
+    transform: scaleX(0);
+    transition:0.5s ease;
+ }
+ .add-input input:focus~.add-underline:before,
+ .add-input input:valid~.add-underline:before{
+    transform: scaleX(1);
+ }

@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
-function Kart(){
+import '../cart.css'
+import Header from './header';
+
+function Cart({cartItems}){
     return(
         <div>
-            <Link to='enter'>heyy to hart</Link>  
+            <Header heading='CART'/>
         </div>
     )
 }
- export default Kart;
+export default Cart

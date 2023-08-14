@@ -1,0 +1,52 @@
+
+.promain{
+  background-color: #3986eb;
+  height: 707px;
+}
+
+.profile-box{
+  background-color: antiquewhite;
+  margin: 50px 350px 50px 350px;
+  margin-bottom: 10px;
+  height: 400px;
+  width:800px;
+  display: flex;
+  padding: 40px;
+}
+#pro-heading{
+  padding-bottom: 20px;
+  color: #3986eb;
+  border-bottom:2px solid rgb(181, 177, 177);
+}
+.line{
+  display: flex;
+  gap:15%;
+}
+.photo-box{
+  width: 250px;
+}
+.data-box{
+  width:550px;
+}
+
+.photo-box img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left:10px;
+  margin-right: auto;
+  border-radius: 50%;
+}
+#pro-button{
+  background:none;
+  border:2px solid #3986eb;
+  outline: none;
+  margin-left: 35px;
+}
+#pro-password{
+  background:none;
+  border:2px solid #3986eb;
+  outline: none;
+  margin-left: 22px;
+}
+

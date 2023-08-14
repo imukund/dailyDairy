@@ -4,13 +4,24 @@ import './App.css';
 //import New from './components/class';
 //import Property from './components/funcprops';
 //import State from './components/state';
-import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
+import { Route,Routes } from 'react-router-dom';
 import Hello from './components/function';
-import Page from './components/enter';
+import Page from './components/home';
+import Profile from './components/profile';
+import Cart from './components/cart';
+import Notification from './components/notification';
+import Order from './components/order';
+import { useState } from 'react';
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <Page/>
+      <Routes>
+        <Route path='/' element={<Page/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/notification' element={<Notification/>}/>
+        <Route path='/order' element={<Order/>}/>
+      </Routes>
     </div>
   )
 }

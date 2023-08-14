@@ -1,5 +1,4 @@
 import '../App.css'
-import { Link, useNavigate } from "react-router-dom";
 function Hello(){
     return(
         <div className="login"><label id='log'>LOGIN</label>
